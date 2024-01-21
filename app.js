@@ -19,7 +19,7 @@ const sequelize = new Sequelize(
   process.env.MYSQL_ROOT_PASSWORD,
   {
     port: process.env.MYSQL_PORT,
-    host: "mysql",
+    host: "127.0.0.1",
     dialect: "mysql",
     logging: false,
     pool: {
@@ -30,6 +30,8 @@ const sequelize = new Sequelize(
     },
   }
 );
+
+sequelize.authenticate();
 
 app.set("port", process.env.PORT || 80);
 

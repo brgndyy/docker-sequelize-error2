@@ -1,12 +1,13 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "private": true,
   "description": "",
-  "main": "index.js",
+  "main": "n/a",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Maximilian Schwarzmüller / Academind GmbH",
+  "author": "errorTest",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
